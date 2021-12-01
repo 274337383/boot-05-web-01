@@ -13,7 +13,7 @@ public class MongoTestC {
     private MongoTestDao mtdao;
 
     @GetMapping(value="/test1")
-    public void saveTest() throws Exception {
+    public void saveTest() {
         MongoTest mgtest=new MongoTest();
         mgtest.setId(11);
         mgtest.setAge(33);

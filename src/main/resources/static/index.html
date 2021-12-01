@@ -6,33 +6,52 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>主页</title>
-    <link rel="stylesheet" href="CSS/layout.css">
-    <script>
-        alert("Hello!");
-    </script>
     <style>
+        .logo {
+            width: 100%;
+            height: 80px;
+            background-color: rgba(0,0,0,0.7);
+            background-image: url("resources/cpp_logo.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: scroll;
+        }
+        .k {
+            width: 230px;
+            height: 40px;
+            background-color: #80d6ff;
+            display: block;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            text-indent: 2em;
+            line-height: 40px;
+        }
+        .k:hover {
+            background-color: lightcoral;
+        }
         body {
             margin: 0;
         }
     </style>
 </head>
 <body>
-<div class="logo">
-    <a href="index.html"><img src="source_material/images/dragon_logo.png" alt=""></a>
-</div>
-<hr />
+<div class="logo"></div>
 <div>
-    <a href="https://www.baidu.com">百度一下</a>
-    <a href="homework/saint.html">圣诞的由来</a>
-    <a href="homework/CSSlast.html">linux新闻</a>
-    <a href="homework/MI_test.html">小米侧边栏</a>
+    <div class="k" style="cursor:pointer"><a href="https://www.baidu.com">百度一下</a></div>
+    <div class="k" style="cursor:pointer"><a href="homework/saint.html">圣诞的由来</a></div>
+    <div class="k" style="cursor:pointer"><a href="PHP_Page/index.php">体育新闻</a></div>
+    <div class="k" style="cursor:pointer"><a href="homework/CSSlast.html">linux新闻</a></div>
+    <div class="k" style="cursor:pointer"><a href="homework/MI_test.html">小米侧边栏</a></div>
 </div>
 <hr />
+
 <div>
     <h3>下载</h3>
     <br />
     <a href="http://b.downya.com/200/photoshopcs6_itmop.com.zip">PhotoShop CS6下载</a>
 </div>
+<br>
 <form action="/user" method="get">
     <input value="REST-GET 提交" type="submit">
 </form>
