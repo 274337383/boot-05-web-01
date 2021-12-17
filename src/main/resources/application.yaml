@@ -3,11 +3,8 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/test
-#  mvc:
-#    static-path-pattern: /res/**
-##  web:
-##    resources:
-##      static-locations: [classpath:/haha/]
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Acceleator2018
+    url: jdbc:mysql://maiddragon.icu:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
