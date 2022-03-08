@@ -11,9 +11,9 @@ import java.util.List;
 @Component
 public interface UserMapper {
 
-    @Select("select * from usertable order by user_id desc")
+    @Select("select * from user order by username")
     List<User> getUserList();
 
-    @Insert("insert into usertable(username,userpassword,age,sex) values(#{username},#{userpassword},#{age},#{sex})")
+    @Insert("insert into test.user(username,password,address,age,sex) values(#{username},#{password},#{address},#{age},#{sex})")
     int AddUser(User user);
 }

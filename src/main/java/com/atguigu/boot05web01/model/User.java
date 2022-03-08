@@ -10,12 +10,12 @@ public class User {
         this.username = username;
     }
 
-    public String getUserpassword() {
-        return userpassword;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUserpassword(String userpassword) {
-        this.userpassword = userpassword;
+    public void setPassword(String userpassword) {
+        this.password = userpassword;
     }
 
     public int getAge() {
@@ -34,9 +34,18 @@ public class User {
         this.sex = sex;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String username;
-    public String userpassword;
-    public  int age;
-    public  String sex;
+    public String password;
+    public String address;
+    public int age;
+    public String sex;
 
 }

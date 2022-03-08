@@ -15,28 +15,13 @@ public class UserServerimpl implements UserServer {
     @Override
     public List<User> getUserList() {
 
-        try {
-            List<User> users = userMapper.getUserList();
-
-            return  users;
-        }
-        catch (Exception e)
-        {
-            throw e;
-//            return null;
-        }
+        return userMapper.getUserList();
     }
 
     @Override
     public String AddUser(User user) {
-        try {
 
-            int i = userMapper.AddUser(user);
-            return "添加成功" + i + "条数据";
-        }
-        catch (Exception e)
-        {
-            throw e;
-        }
+        int i = userMapper.AddUser(user);
+        return "添加成功" + i + "条数据";
     }
 }

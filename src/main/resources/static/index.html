@@ -1,54 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="http://127.0.0.1:8080/main.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/TouHou.css">
+    <link type="text/css" rel="stylesheet" href="https://webfont.hellofont.cn/webfont/puhuiti-2?weight=35&family=puhuiti-2-35">
+    <title>月战老兵,参上!</title>
     <style>
         * {
             margin: 0;
+            padding: 0;
         }
 
-        .box {
+        body {
+            background-color: #f6f6f6;
+        }
+
+        #reisen {
+            background-image: url('http://127.0.0.1:8080/reisen.jpeg');
+            background-size: 100%;
+            background-color: #fff;
+        }
+
+        #yrh_ovpn {
             display: block;
-            background-color: #c4c4c4;
-            width: 298px;
-            height: 415px;
             margin: 100px auto;
-        }
-        .box img {
-            width: 100%;
+            line-height: 42px;
+            text-decoration: none;
         }
 
-        .review {
-            height: 70px;
-            font-size: 14px;
-            font-family: 等线,serif;
-            color: #000000;
-            padding: 0 28px;
-            margin-top: 30px;
-        }
-        .git {
-            display: block;
-            height: 60px;
-            width: 60px;
-            margin-left: 15px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url("https://img.icons8.com/material-outlined/48/000000/github.png");
-        }
-        .git:hover {
-            background-color: #c2c2c3;
+        #login {
+            float: right;
         }
     </style>
 </head>
 <body>
-<div class="box">
-    <img src="images/1(low).jpg" alt="">
-    <p class="review">你好，来到我的网站</p>
-    <a href="https://github.com/274337383" class="git"></a>
+<div class="TouHou_Top">
+    <a href="http://127.0.0.1:8080/login.html" class="box" id="login">登录</a>
+</div>
+<div class="login_box" id="reisen">
+    <div class="review">
+        <a href="http://127.0.0.1:8080/yrh.ovpn" class="login_btn" id="yrh_ovpn">点此处获取VPN</a>
+    </div>
+</div>
+<div id="information">
+    <hr>
+    <br />
+    @AKO版权所有      备案号: 闽ICP备2021018232号
 </div>
 </body>
 </html>
